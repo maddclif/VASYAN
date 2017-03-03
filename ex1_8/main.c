@@ -1,24 +1,16 @@
 #include <stdio.h>
 int main(void)
 {
-    int table=0, space=0, novayastr=0, a, b, c;
-    while ((b = getchar()) != EOF)
-    {
-        if (b == '\t')
-            ++table;
-        printf ("%d\n", table);
-    }
+    int table=0, space=0, novayastr=0, a;
     while ((a = getchar()) != EOF)
     {
+        if (a == '\t')
+            table++;
         if (a == ' ')
-        ++space;
-        printf ("%d\n", space);
+            space++;
+        if (a == '\n')
+            novayastr++;
     }
-    while ((c = getchar()) != EOF)
-    {
-        if (c == '\n')
-        ++novayastr;
-        printf ("%d\n", novayastr);
-    }
+    printf ("table=%d\tspace=%d\tnovayastr=%d\n", table, space, novayastr);
     return 0;
 }
