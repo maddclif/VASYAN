@@ -10,7 +10,7 @@ int main(void)
             space++;
         if (a == '\n')
             novayastr++;
+        printf ("\rtable=%d\tspace=%d\tnovayastr=%d", table, space, novayastr);
     }
-    printf ("table=%d\tspace=%d\tnovayastr=%d\n", table, space, novayastr);
     return 0;
 }
