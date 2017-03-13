@@ -7,7 +7,7 @@ int main(void)
         if (c == '\t')
             printf ("\\\\t");
         if (c == '\b')
-            printf ("\\b");
+            printf ("\\\\b");
         if (c == '\\')
             printf ("\\\\");
         else putchar(c);

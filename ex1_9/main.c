@@ -11,6 +11,7 @@ int main(void)
      else if(f==1) {
          f=0;
          putchar(' ');
+
      }
 
      if (f == 0)
